@@ -8,7 +8,9 @@ import Rutas.MovimientoProfundidad;
 
 public class ShPhysical2 extends SuperHeroe {
 /**Constructores de la clase ShPhysical */	
-	
+	/**
+	 * Clase creada para la defensa
+	 */
 	
 	/**
 	 * Constructor por defecto de la clase ShPhysical que hereda de SuperHeroe
