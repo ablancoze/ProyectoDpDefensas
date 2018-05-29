@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="dp.cargador.ClasePrincipal" project="ec3_SuperHeroes_Blanco_Mangut_Alvaro" 
+    file="/ec3_SuperHeroes_Blanco_Mangut_Alvaro/src/dp/cargador/ClasePrincipal.java" binary="false" 
+    label="clasePrincipal" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="2">      
+      <position height="2289" width="0" x="0" y="491"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="Mapa_SuperHeroes.Mapa" project="ec3_SuperHeroes_Blanco_Mangut_Alvaro" 
+    file="/ec3_SuperHeroes_Blanco_Mangut_Alvaro/src/Mapa_SuperHeroes/Mapa.java" binary="false" label="mapa" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="4">      
+      <position height="2235" width="0" x="0" y="518"/>    
+    </execution>    
+    <execution id="7">      
+      <position height="27" width="0" x="0" y="621"/>    
+    </execution>    
+    <execution id="9">      
+      <position height="27" width="0" x="0" y="834"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="27" width="0" x="0" y="1157"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="java.io.BufferedWriter" project="ec3_SuperHeroes_Blanco_Mangut_Alvaro" 
+    file="C:/Program Files/Java/jre1.8.0_151/lib/rt.jar" binary="true" label="bufferOff" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="11">      
+      <position height="27" width="0" x="0" y="874"/>    
+    </execution>    
+    <execution id="13">      
+      <position height="27" width="0" x="0" y="928"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="java.io.PrintStream" project="ec3_SuperHeroes_Blanco_Mangut_Alvaro" 
+    file="C:/Program Files/Java/jre1.8.0_151/lib/rt.jar" binary="true" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="27" width="0" x="0" y="1026"/>    
+    </execution>  
+  </object>  
+  <object id="22" language="java" name="Mapa_SuperHeroes.Sala" project="ec3_SuperHeroes_Blanco_Mangut_Alvaro" 
+    file="/ec3_SuperHeroes_Blanco_Mangut_Alvaro/src/Mapa_SuperHeroes/Sala.java" binary="false" label="sala" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="19">      
+      <position height="1492" width="0" x="0" y="1234"/>    
+    </execution>    
+    <execution id="30">      
+      <position height="1155" width="0" x="0" y="1544"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="27" width="0" x="0" y="1440"/>    
+    </execution>    
+    <execution id="36">      
+      <position height="27" width="0" x="0" y="1840"/>    
+    </execution>  
+  </object>  
+  <object id="39" language="java" name="Mapa_SuperHeroes.Mapa" project="ec3_SuperHeroes_Blanco_Mangut_Alvaro" 
+    file="/ec3_SuperHeroes_Blanco_Mangut_Alvaro/src/Mapa_SuperHeroes/Mapa.java" binary="false" label="&lt;static&gt;" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="32">      
+      <position height="27" width="0" x="0" y="1652"/>    
+    </execution>    
+    <execution id="40">      
+      <position height="27" width="0" x="0" y="2161"/>    
+    </execution>  
+  </object>  
+  <object id="41" language="java" name="Mapa_SuperHeroes.Mapa" project="ec3_SuperHeroes_Blanco_Mangut_Alvaro" 
+    file="/ec3_SuperHeroes_Blanco_Mangut_Alvaro/src/Mapa_SuperHeroes/Mapa.java" binary="false" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="34">      
+      <position height="27" width="0" x="0" y="1706"/>    
+    </execution>  
+  </object>  
+  <object id="42" language="java" name="java.util.LinkedList" project="ec3_SuperHeroes_Blanco_Mangut_Alvaro" 
+    file="C:/Program Files/Java/jre1.8.0_151/lib/rt.jar" binary="true" label="personajesSala" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="24">      
+      <position height="27" width="0" x="0" y="1261"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="27" width="0" x="0" y="1359"/>    
+    </execution>  
+  </object>  
+  <object id="43" language="java" name="Personajes.Personaje" project="ec3_SuperHeroes_Blanco_Mangut_Alvaro" 
+    file="/ec3_SuperHeroes_Blanco_Mangut_Alvaro/src/Personajes/Personaje.java" binary="false" label="personaje" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="38">      
+      <position height="755" width="0" x="0" y="1917"/>    
+    </execution>    
+    <execution id="58">      
+      <position height="27" width="0" x="0" y="2618"/>    
+    </execution>    
+    <execution id="45">      
+      <position height="27" width="0" x="0" y="2054"/>    
+    </execution>    
+    <execution id="47">      
+      <position height="27" width="0" x="0" y="2121"/>    
+    </execution>    
+    <execution id="54">      
+      <position height="27" width="0" x="0" y="2437"/>    
+    </execution>    
+    <execution id="56">      
+      <position height="27" width="0" x="0" y="2504"/>    
+    </execution>  
+  </object>  
+  <object id="59" language="java" name="Mapa_SuperHeroes.Mapa" project="ec3_SuperHeroes_Blanco_Mangut_Alvaro" 
+    file="/ec3_SuperHeroes_Blanco_Mangut_Alvaro/src/Mapa_SuperHeroes/Mapa.java" binary="false" type="class" 
+    autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="50">      
+      <position height="27" width="0" x="0" y="2215"/>    
+    </execution>    
+    <execution id="52">      
+      <position height="27" width="0" x="0" y="2269"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="60" interaction-operator="LOOP">    
+    <interaction-operand id="61" constraint="while: turno&lt;=maxTurnos">      
+      <fragment refId="6"/>      
+      <fragment refId="62"/>      
+      <fragment refId="16"/>    
+    </interaction-operand>    
+    <combined-fragment id="62" interaction-operator="OPT">      
+      <interaction-operand id="63" constraint="turno&gt;0">        
+        <fragment refId="64"/>      
+      </interaction-operand>      
+      <combined-fragment id="64" interaction-operator="LOOP">        
+        <interaction-operand id="65" constraint="for:i &lt; dimX">          
+          <fragment refId="66"/>        
+        </interaction-operand>        
+        <combined-fragment id="66" interaction-operator="LOOP">          
+          <interaction-operand id="67" constraint="for:j &lt; dimY">            
+            <fragment refId="68"/>          
+          </interaction-operand>          
+          <combined-fragment id="68" interaction-operator="OPT">            
+            <interaction-operand id="69" constraint="tablero[i][j].simulacion(turno)">              
+              <fragment refId="70"/>              
+              <fragment refId="8"/>              
+              <fragment refId="10"/>              
+              <fragment refId="12"/>            
+            </interaction-operand>            
+            <combined-fragment id="70" interaction-operator="NEG">              
+              <interaction-operand id="71" constraint="Exception e">                
+                <fragment refId="14"/>              
+              </interaction-operand>            
+            </combined-fragment>          
+          </combined-fragment>        
+        </combined-fragment>      
+      </combined-fragment>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="72" interaction-operator="LOOP">    
+    <interaction-operand id="73" constraint="while: i&lt;nPersonajes">      
+      <fragment refId="25"/>      
+      <fragment refId="27"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="74" interaction-operator="ALT">    
+    <interaction-operand id="75" constraint="p.getTurno()==turno">      
+      <fragment refId="76"/>    
+    </interaction-operand>    
+    <interaction-operand id="77" constraint="else">      
+      <fragment refId="35"/>    
+    </interaction-operand>    
+    <combined-fragment id="76" interaction-operator="OPT">      
+      <interaction-operand id="78" constraint="p.accionPersonaje()">        
+        <fragment refId="33"/>        
+        <fragment refId="31"/>      
+      </interaction-operand>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="79" interaction-operator="ALT">    
+    <interaction-operand id="80" constraint="salaActual == Mapa.getMapa().getSalaHombrePuerta()">      
+      <fragment refId="81"/>    
+    </interaction-operand>    
+    <interaction-operand id="82" constraint="else">      
+      <fragment refId="83"/>    
+    </interaction-operand>    
+    <combined-fragment id="81" interaction-operator="ALT">      
+      <interaction-operand id="84" constraint="accionHombrePuerta()"/>      
+      <interaction-operand id="85" constraint="else">        
+        <fragment refId="44"/>        
+        <fragment refId="46"/>        
+        <fragment refId="51"/>        
+        <fragment refId="48"/>        
+        <fragment refId="49"/>      
+      </interaction-operand>    
+    </combined-fragment>    
+    <combined-fragment id="83" interaction-operator="OPT">      
+      <interaction-operand id="86" constraint="movimiento()">        
+        <fragment refId="53"/>        
+        <fragment refId="55"/>      
+      </interaction-operand>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <message id="3" operation="simulacion(int):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="setTurno(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="8" operation="pintar(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="9"/>  
+  </message>  
+  <message id="10" operation="flush():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="close():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="println(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="pintar(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="simulacion(int):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="23" operation="size():int" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="getFirst():E" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="salirSala(Personajes.Personaje):void" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="29" operation="procesarPersonaje(Personajes.Personaje,int):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>  
+  <message id="31" operation="getMapa():Mapa_SuperHeroes.Mapa" asynchronous="false">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="32"/>  
+  </message>  
+  <message id="33" operation="insertarPersonajeGanador(Personajes.Personaje):void" asynchronous="false">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="34"/>  
+  </message>  
+  <message id="35" operation="entrarSala(Personajes.Personaje):void" asynchronous="false">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="36"/>  
+  </message>  
+  <message id="37" operation="accionPersonaje():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="38"/>  
+  </message>  
+  <message id="44" operation="accionArma():void" asynchronous="false">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="45"/>  
+  </message>  
+  <message id="46" operation="interactuar():void" asynchronous="false">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="47"/>  
+  </message>  
+  <message id="48" operation="getMapa():Mapa_SuperHeroes.Mapa" asynchronous="false">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="40"/>  
+  </message>  
+  <message id="49" operation="getSala(int):Mapa_SuperHeroes.Sala" asynchronous="false">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="50"/>  
+  </message>  
+  <message id="51" operation="entrarSala(Personajes.Personaje):void" asynchronous="false">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="52"/>  
+  </message>  
+  <message id="53" operation="accionArma():void" asynchronous="false">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="54"/>  
+  </message>  
+  <message id="55" operation="interactuar():void" asynchronous="false">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="56"/>  
+  </message>  
+  <message id="57" operation="accionHombrePuerta():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="58"/>  
+  </message>
+</sequence-diagram>
