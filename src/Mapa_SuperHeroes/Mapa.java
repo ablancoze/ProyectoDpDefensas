@@ -311,7 +311,7 @@ public class Mapa {
 	private void distribuirArmas(LinkedList<Sala> salas,Arma [] armasSalas) {
 		int aux=0;
 		for (int i = 0; i<12 && !salas.isEmpty(); i++) {
-			for (int j = aux; salas.getFirst().tamañoArmas() < 5; j++) {
+			for (int j = aux; salas.getFirst().tamanoArmas() < 5; j++) {
 				
 				salas.getFirst().insertarArma(armasSalas[j]);
 			}
@@ -380,7 +380,7 @@ public class Mapa {
 		
 		if(origen!=destino){//Si el origen es igual al destino el camino que se ha llevado a cabo es valido, si no lo es seguimos explorando caminos
 
-			visitados.add(origen);//Añadimos el nodo con el que estamos trabajando al visitados
+			visitados.add(origen);//Aï¿½adimos el nodo con el que estamos trabajando al visitados
 
 			this.grafoMapa.adyacentes(origen, ady);//Cogemos los adyacentes del nodo que estamos tratando
 
@@ -431,7 +431,7 @@ public class Mapa {
 		
 		if(origen!=destino){//Si el origen es igual al destino el camino que se ha llevado a cabo es valido, si no lo es seguimos explorando caminos
 
-			visitados.add(origen);//Añadimos el nodo con el que estamos trabajando al visitados
+			visitados.add(origen);//Aï¿½adimos el nodo con el que estamos trabajando al visitados
 
 			this.grafoMapa.adyacentes(origen, ady);//Cogemos los adyacentes del nodo que estamos tratando
 

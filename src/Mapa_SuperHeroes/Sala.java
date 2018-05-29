@@ -303,10 +303,10 @@ public class Sala {
 	
 	
 		/**
-		 * Metodo que nos permite conoce el tamaño actual de la lista de armas de la sala
-		 * @return int: Tamaño de la lista de armas de la sala
+		 * Metodo que nos permite conoce el tamaï¿½o actual de la lista de armas de la sala
+		 * @return int: Tamaï¿½o de la lista de armas de la sala
 		 */
-		public int tamañoArmas() {
+		public int tamanoArmas() {
 			return armaSala.size();
 		}
 		
