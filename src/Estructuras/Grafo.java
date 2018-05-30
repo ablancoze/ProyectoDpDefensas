@@ -206,9 +206,11 @@ public class Grafo {
     /**
     * Metodo que devuelve el conjunto de nodos adyacentes al nodo actual
     * @param origen es el nodo actual
-    * @param ady En este conjunto se almacenaran los nodos adyacentes al nodo origen
+    * @param ady En este conjunto se almacenaran los nodos adyacentes al nodo origen. El conjunto vendra ordenado de menor a mayor identificador de la salas.
+    * 
     */
-    public void adyacentes(int origen, Set<Integer> ady){
+    public void adyacentes(int origen, Set<Integer> ady){//si le pasas como origen la sala 6 y esta esta conectada con la 0 la 7 y la 12
+    													// el conjunto ady resultante vendra por orden de indentificacion de las salas.
        if ((origen >= 0) && (origen < numNodos)) {
     		for (int i=0;i<numNodos;i++) {
            	 	if ((arcos[origen][i]!=INFINITO) && (arcos[origen][i]!=0))	

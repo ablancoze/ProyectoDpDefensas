@@ -112,7 +112,7 @@ public class Mapa {
 		kruskal();
 		pintarMapa();
 		atajos();
-//		pintarMapa();
+		pintarMapa();
 		configurarMapa();
 		//pintarRutas();
 	}
@@ -292,14 +292,15 @@ public class Mapa {
 		LinkedList<Integer>visitados=new LinkedList<Integer>();
 		LinkedList<Sala>recorrido=new LinkedList<Sala>();
 		LinkedList<LinkedList<Sala>>todosLosCaminos=new LinkedList<LinkedList<Sala>>();
+		LinkedList<LinkedList<Integer>>todosLosCaminos2=new LinkedList<LinkedList<Integer>>();
 		
 		obtenerTodosLosCaminos(0, this.salaHombrePuerta, visitados, recorrido, todosLosCaminos);
-		//obtenerFrecuencia(0, this.salaHombrePuerta, visitados, recorrido);
-		LinkedList<Sala>salasOrdenadas=new LinkedList<Sala>();
+		obtenerFrecuencia(0, this.salaHombrePuerta, visitados, recorrido,todosLosCaminos2);
+	//	LinkedList<Sala>salasOrdenadas=new LinkedList<Sala>();
 		
-		obtenerFrecuencia(salasOrdenadas,todosLosCaminos);//Nos devuelve el numero de caminos que hay entre la sala origen y la final
-		distribuirArmas(salasOrdenadas,armasSalas);
-		//distribuirArmas(recorrido,armasSalas);
+		//obtenerFrecuencia(salasOrdenadas,todosLosCaminos);//Nos devuelve el numero de caminos que hay entre la sala origen y la final
+		//distribuirArmas(salasOrdenadas,armasSalas);
+		distribuirArmas(recorrido,armasSalas);
 		
 	}
 	
@@ -370,7 +371,7 @@ public class Mapa {
 	 * @param idSalasConArmas: Vector que contiene los identificadores de las salas en las que se distribuyen las armas
 	 * @param armasSalas: Vector que contiene las armas que se distribuiran por las salas
 	 */
-	private int obtenerFrecuencia(Integer origen, int destino, LinkedList<Integer>visitados,LinkedList<Sala>recorrido) {
+	private int obtenerFrecuencia(Integer origen, int destino, LinkedList<Integer>visitados,LinkedList<Sala>recorrido,LinkedList<LinkedList<Integer>>todosLosCaminos) {
 		Integer vertice=0;//Nodo vertice al nodo en el que estamos
 		int bandera = 0;//Bandera booleana
 		Integer caminosHastaAhora=0;//Entero que nos indica el numero de caminos validos hasta ahora
@@ -380,7 +381,7 @@ public class Mapa {
 		
 		if(origen!=destino){//Si el origen es igual al destino el camino que se ha llevado a cabo es valido, si no lo es seguimos explorando caminos
 
-			visitados.add(origen);//Aï¿½adimos el nodo con el que estamos trabajando al visitados
+			visitados.add(origen);//Añadimos el nodo con el que estamos trabajando al visitados
 
 			this.grafoMapa.adyacentes(origen, ady);//Cogemos los adyacentes del nodo que estamos tratando
 
@@ -391,15 +392,12 @@ public class Mapa {
 				ady.remove(vertice);//Elimino el adyacente que vamos a tratar
 				
 				if(!visitados.contains(vertice)){
-					bandera=obtenerFrecuencia(vertice, destino,visitados,recorrido);
+					bandera=obtenerFrecuencia(vertice, destino,visitados,recorrido,todosLosCaminos);
 					if(bandera>0){//Quiere decir que el camino es correcto
 						
 						aux.setFrecuencia(aux.getFrecuencia()+bandera);
-						if(recorrido.contains(aux)){
-							Collections.sort(recorrido, Collections.reverseOrder(new OrdenarSalas()));
-						}else{
+						if(!recorrido.contains(aux)){
 							recorrido.add(aux);
-							Collections.sort(recorrido, Collections.reverseOrder(new OrdenarSalas()));
 						}
 						caminosHastaAhora=caminosHastaAhora+bandera;
 					}
@@ -409,12 +407,16 @@ public class Mapa {
 			return caminosHastaAhora;
 		}
 		aux.frecuenciaMas();
-		if(recorrido.contains(aux)){
-			Collections.sort(recorrido, Collections.reverseOrder(new OrdenarSalas()));
-		}else{
+		
+		visitados.add(origen);
+		LinkedList<Integer> auxiliar=new LinkedList<Integer> (visitados);
+		todosLosCaminos.add(auxiliar);
+		visitados.remove(origen);
+		
+		if(!recorrido.contains(aux)){
 			recorrido.add(aux);
-			Collections.sort(recorrido, Collections.reverseOrder(new OrdenarSalas()));
 		}
+		
 		bandera++;
 
 		return bandera;
@@ -719,9 +721,9 @@ public class Mapa {
 			
 			if (s1.getMarca()!=s2.getMarca()){//si las marcas son distintas, significa que las podemos derribar.
 				
-				if(grafoMapa.nuevoArco(aux.getPrimero(),aux.getSegundo(), 1) 
+				if(grafoMapa.nuevoArco(aux.getPrimero(),aux.getSegundo(), s1.getIdentificador()+s2.getIdentificador()) 
 						&& 
-				   grafoMapa.nuevoArco(aux.getSegundo(),aux.getPrimero(), 1)){//Creamos los nuevos arcos para el grafo
+				   grafoMapa.nuevoArco(aux.getSegundo(),aux.getPrimero(), s1.getIdentificador()+s2.getIdentificador())){//Creamos los nuevos arcos para el grafo
 				}
 				
 				extenderMarcaSala(s1.getMarca(),s2.getMarca());//Extendemos la marca
@@ -757,8 +759,8 @@ public class Mapa {
 				if (!grafoMapa.adyacente(random, destino)){//Si no son adyacentes
 
 					if (grafoMapa.costeCamino(random, destino)>3){//Si coste del camino de una sala a otra es mayor de 3
-						grafoMapa.nuevoArco(random, destino, 1);
-						grafoMapa.nuevoArco(destino, random, 1);
+						grafoMapa.nuevoArco(random, destino, tablero[random][destino].getIdentificador()+tablero[destino][random].getIdentificador());
+						grafoMapa.nuevoArco(destino, random, tablero[random][destino].getIdentificador()+tablero[destino][random].getIdentificador());
 						i++;
 						tirado=true;
 					}
@@ -1040,6 +1042,16 @@ public class Mapa {
 	public void getAdyacentes(int origen, TreeSet<Integer> ady) {
 		this.grafoMapa.adyacentes(origen, ady);
 		
+	}
+	
+	/**
+	 * 
+	 * @param origen
+	 * @param destino
+	 * @return
+	 */
+	public int costeCamino(Integer origen, Integer destino){
+		return this.grafoMapa.costeCamino(origen, destino);
 	}
 
 	/**

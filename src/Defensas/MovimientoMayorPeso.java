@@ -1,10 +1,11 @@
-package Rutas;
+package Defensas;
 
 import java.util.LinkedList;
 
 import Mapa_SuperHeroes.Mapa;
 import Mapa_SuperHeroes.Sala;
 import Mapa_SuperHeroes.Mapa.Dir;
+import Rutas.MoveBehavior;
 
 public class MovimientoMayorPeso implements MoveBehavior {
 
@@ -20,13 +21,17 @@ public class MovimientoMayorPeso implements MoveBehavior {
 		LinkedList<Sala>recorrido=new LinkedList<Sala>();
 		LinkedList<LinkedList<Sala>>todosLosCaminos=new LinkedList<LinkedList<Sala>>();
 		Mapa.getMapa().obtenerTodosLosCaminos(origen, destino, visitados, recorrido, todosLosCaminos);
-		int caminomayor=0;
+		int cantidadPoder=0;
+		int mayorCamino=0;
 		for (int i = 0; i < todosLosCaminos.size(); i++) {
+			cantidadPoder=0;
 			for (int j = 0; j < todosLosCaminos.get(i).size() ; j++) {
 				
-				if(todosLosCaminos.get(i).get(j).poderDeLaSala()>caminomayor){
-					recorrido=todosLosCaminos.get(i);
-				}
+				cantidadPoder=todosLosCaminos.get(i).get(j).poderDeLaSala()+cantidadPoder;
+			}
+			
+			if (cantidadPoder>mayorCamino){
+				recorrido=todosLosCaminos.get(i);
 			}
 		}
 		
